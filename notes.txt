@@ -1,0 +1,69 @@
+<div class="form-group">
+            <label>Nama:</label>
+            <input type="text" name="nama" required>
+          </div>
+          <div class="form-group">
+            <label>No. IC:</label>
+            <input type="text" name="noIC" required>
+          </div>
+          <div class="form-group">
+            <label>Alamat:</label>
+            <textarea name="alamat" required></textarea>
+          </div>
+          <div class="form-group">
+            <label>No. Telefon:</label>
+            <input type="text" name="noTel" required>
+          </div>
+          <div class="form-group">
+            <label>Jantina:</label>
+            <select name="jantina" required>
+              <option value="">--Pilih--</option>
+              <option value="Lelaki">Lelaki</option>
+              <option value="Perempuan">Perempuan</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Email:</label>
+            <input type="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label>Nama Syarikat:</label>
+            <input type="text" name="namaSyarikat" required>
+          </div>
+          <div class="form-group">
+            <label>Status Pembayaran:</label>
+            <select name="statusPembayaran" id="statusPembayaran" onchange="toggleImageUpload()" required>
+              <option value="">--Pilih--</option>
+              <option value="Sudah Bayar">Sudah Bayar</option>
+              <option value="Belum Bayar">Belum Bayar</option>
+            </select>
+          </div>
+
+          <div class="form-group" id="imageUpload" style="display:none;">
+            <label>Muat Naik Bukti Pembayaran:</label>
+            <input type="file" name="paymentImage" accept="image/*">
+          </div>
+		  
+		  <section id="pendaftaran">
+    <h2>Borang Pendaftaran Keahlian</h2>
+    <form>
+        <div class="form-group">
+            <label for="nama">Nama Penuh:</label>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Emel:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="pekerjaan">Jawatan/Pekerjaan:</label>
+            <input type="text" id="pekerjaan" name="pekerjaan" required>
+        </div>
+        <div class="form-group">
+            <label for="mesej">Mesej Tambahan:</label>
+            <textarea id="mesej" name="mesej"></textarea>
+        </div>
+        <p>Yuran bulanan: RM10</p>
+        <button type="submit">Hantar</button>
+    </form>
+</section>
